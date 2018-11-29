@@ -5,10 +5,10 @@ class GameControls extends Component {
         return (
             <div className="game-controls">
 
-                <p>New Colors or Play Again</p>
-                <p>{this.props.progressText}</p>
-                <p className="level" onClick={() => this.props.randomColors(3)}>Easy</p>
-                <p className="level" onClick={() => this.props.randomColors(6)}>Hard</p>
+                <p className="new-game" onClick={() => this.props.randomColors(6)}>{this.props.newGameText}</p>
+                <p className="progress-text">{this.props.progressText}</p>
+                <p className="level" onClick={() => this.props.gameDifficulty(3)}>Easy</p>
+                <p className="level" onClick={() => this.props.gameDifficulty(6)}>Hard</p>
                 
             </div>
         );

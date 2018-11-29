@@ -6,7 +6,7 @@ class GameHeader extends Component {
             <div className="game-header">
                 <h1>Cool RGB Guessing Game</h1>
 
-                <h2>{this.props.colorGuess}</h2>
+                <h2>{this.props.colorGuess.toUpperCase()}</h2>
             </div>
         );
     }
