@@ -26,31 +26,51 @@ class App extends Component {
   }
 
   randomColors = () => {
-    console.log(this.state)
+
     let newColors = new Array(this.state.difficulty)
-      .fill(1)
-      .map(
+      .fill(1).map(
         e => `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255
           )}, ${Math.floor(Math.random() * 255)})`
       );
-    let newColorGuess = newColors[Math.floor(Math.random() * (this.state.difficulty-1))]
+    let newColorGuess = newColors[Math.floor(Math.random() * (this.state.difficulty-1))];
     this.setState({
       colorsArr: newColors, 
       colorGuess: newColorGuess
-    }, () => { if (this.state.newGameText !== "New Colors") this.setState({ newGameText: "New Colors", progressText: ""}) } )
+    }, () => this.winCheck() );
   }
 
-  checkClickedColor = (color) => {
+  sameColor = (color) => {
+    let sameColorArr = new Array(this.state.difficulty).fill(color)
+    this.setState({
+      colorsArr: sameColorArr
+    });
+  }
+
+  winCheck = () => {
+    if (this.state.newGameText !== "New Colors") this.setState({ newGameText: "New Colors", progressText: "" })
+  }
+
+  changeWrongColor = (index) => {
+    let newArr = [...this.state.colorsArr];
+    newArr[index] = "rgb(35, 35, 35)";
+    this.setState({
+      colorsArr: newArr
+    });
+  }
+
+  checkClickedColor = (color, index) => {
     // set progressText 
     if(color === this.state.colorGuess){
+      this.sameColor(color);
       this.setState({
         newGameText: "Play Again?",
         progressText: "Correct!"
-      })
+      });
     } else {
+      this.changeWrongColor(index);
       this.setState({
         progressText: "Try Again"
-      })
+      });
     }
   }
 

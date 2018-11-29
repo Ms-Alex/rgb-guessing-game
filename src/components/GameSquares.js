@@ -3,8 +3,8 @@ import UUID from 'uuid';
 
 class GameSquares extends Component {
     differentSquares = () => {
-        return this.props.colorsArr.map(color => (
-          <div key={UUID()} className="square" style={{backgroundColor: `${color}`}} onClick={() => this.props.checkClickedColor(color)} />
+        return this.props.colorsArr.map((color, i) => (
+          <div key={UUID()} className="square" style={{backgroundColor: `${color}`}} onClick={() => this.props.checkClickedColor(color, i)} />
         ));
     }
 
