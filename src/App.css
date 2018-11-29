@@ -20,10 +20,20 @@ h1, h2, p {
   border-radius: 20%;
 }
 
+.game-controls p {
+
+
+}
+
 .level, .new-game {
   cursor: pointer;
 }
 
 .progress-text {
   cursor: default;
+  margin: 10px 50px;
 }
+
+/* .level {
+  margin: 10px 
+} */
