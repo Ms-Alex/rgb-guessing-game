@@ -7,11 +7,11 @@ import './App.css';
 class App extends Component {
   state = {
     colorsArr: [],
-    colorGuess: ""
+    colorGuess: "",
+    progressText: ""
   }
 
   componentDidMount(){
-    //edit size based on easy or hard mode
     this.randomColors(6);
   }
 
@@ -19,18 +19,18 @@ class App extends Component {
     let newColors = new Array(size)
       .fill(1)
       .map(
-        e =>
-          `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(
-            Math.random() * 255
+        e => `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255
           )}, ${Math.floor(Math.random() * 255)})`
       );
-
-      let newColorGuess = newColors[Math.floor(Math.random() * (size-1))]
-
+    let newColorGuess = newColors[Math.floor(Math.random() * (size-1))]
     this.setState({
       colorsArr: newColors, 
       colorGuess: newColorGuess
     })
+  }
+
+  checkClickedColor = (color) => {
+
   }
 
   render() {
@@ -41,7 +41,7 @@ class App extends Component {
       <div className="App">
 
           <GameHeader colorGuess={this.state.colorGuess} />
-          <GameControls />
+          <GameControls randomColors={this.randomColors} progressText={this.state.progressText} />
           <GameSquares colorsArr={this.state.colorsArr} />
 
       </div>

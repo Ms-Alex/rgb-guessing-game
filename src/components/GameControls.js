@@ -6,6 +6,9 @@ class GameControls extends Component {
             <div className="game-controls">
 
                 <p>New Colors or Play Again</p>
+                <p>{this.props.progressText}</p>
+                <p className="level" onClick={() => this.props.randomColors(3)}>Easy</p>
+                <p className="level" onClick={() => this.props.randomColors(6)}>Hard</p>
                 
             </div>
         );
