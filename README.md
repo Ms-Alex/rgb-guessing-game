@@ -1,44 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The RGB Guessing Game
+> Guess which square contains the correct RGB color displayed on the game header!
 
-## Available Scripts
+Created using React. You can 
 
-In the project directory, you can run:
+Ruby on Rails API back end repo available here: https://github.com/newmanbradm/basket_case_backend
 
-### `npm start`
+<p align="center">
+  <img src="https://media.giphy.com/media/8FDepbpNfE0ZPxXdjB/giphy.gif" alt="basketcase still image">
+</p>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+OS X & Linux:
 
-### `npm test`
+front end: 
+```sh
+npm install
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage example
 
-### `npm run build`
+Before playing, you must enter a username:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img src="https://media.giphy.com/media/fZYlMl3caJxX9pGXTN/giphy.gif" alt="basketcase demo 1">
+</p>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then, play to your heart's content until you reach the leaderboard. But, remember to AVOID the beehives!
 
-### `npm run eject`
+<p align="center">
+  <img src="https://media.giphy.com/media/69jtMeDXW7Z2marvz8/giphy.gif" alt="basketcase demo 2">
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+front end:
+```sh
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+** Must have node.js installed.
 
-## Learn More
+## Release History
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 0.1.0
+    * The first proper release
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Meta
+
+Alexandra Hernandez – ms.hernandeza1@gmail.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[https://github.com/Ms-Alex/github-link]
+
+## Contributing
+
+1. Fork it (<https://github.com/Ms-Alex/rgb-guessing-game/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
