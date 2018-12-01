@@ -6,7 +6,7 @@ Created using React. You can test out your RGB color skills in this game, by cho
 Future potential updates: Add a 60 second timer, and a backend to persist top scores.
 
 <p align="center">
-  <img src="" alt="rgbColorGame still image">
+  <img src="https://media.giphy.com/media/35C7BVSXdVsUYrpnyG/giphy.gif" alt="rgbColorGame still image">
 </p>
 
 ## Installation
@@ -25,14 +25,14 @@ npm install
 You can click to have new colors render. Then, choose the correct tile, and play again:
 
 <p align="center">
-  <img src="" alt="rgbColorGame demo 1">
+  <img src="https://media.giphy.com/media/3JU69qNbMMEI7ze9Wd/giphy.gif" alt="rgbColorGame demo 1">
 </p>
 
 
 Want to play on an easier mode? Click on EASY:
 
 <p align="center">
-  <img src="" alt="rgbColorGame demo 2">
+  <img src="https://media.giphy.com/media/1lwtxMVXasZcpxQiKf/giphy.gif" alt="rgbColorGame demo 2">
 </p>
 
 
