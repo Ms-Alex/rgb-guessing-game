@@ -3,6 +3,8 @@
 
 Created using React. You can test out your RGB color skills in this game, by choosing the correct tile. There are two difficulty modes: Easy contains only 3 tiles to guess from, and HARD mode contains 6 tiles. Just a heads up: the game starts on HARD mode.
 
+Deployed using GitHub Pages: https://ms-alex.github.io/rgb-guessing-game/
+
 Future potential updates: Add a 60 second timer, and a backend to persist top scores.
 
 <p align="center">
