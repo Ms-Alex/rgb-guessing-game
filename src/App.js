@@ -61,7 +61,7 @@ class App extends Component {
     if(this.state.newGameText === "Play Again?") {
       $("#game-header").css("background-color", `${color}`);
     } else if (this.state.newGameText === "New Colors") {
-      $("#game-header").css("background-color", "rgb(35, 35, 35)");
+      $("#game-header").css("background-color", "#c64cff");
     }
   }
 
@@ -81,6 +81,16 @@ class App extends Component {
     }
   }
 
+  toggleClassSelected = () => {
+    if(this.state.difficulty === 6){
+      $("#hardBtn").addClass("selected");
+      $("#easyBtn").removeClass("selected");
+    } else {
+      $("#easyBtn").addClass("selected");
+      $("#hardBtn").removeClass("selected");
+    }
+  }
+
   render() {
 
     return <div className="App">
@@ -90,6 +100,7 @@ class App extends Component {
         <GameSquares colorsArr={this.state.colorsArr} checkClickedColor={this.checkClickedColor} />
 
         {this.changeGameHeaderColor(this.state.colorGuess)}
+        {this.toggleClassSelected()}
 
       </div>;
   }

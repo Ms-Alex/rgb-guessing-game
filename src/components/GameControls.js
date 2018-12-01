@@ -9,11 +9,11 @@ class GameControls extends Component {
             <span className="progress-text">
               {this.props.progressText}
             </span>
-            <button className="level" onClick={() => this.props.gameDifficulty(3)}>
+            <button id="easyBtn" className="level" onClick={() => this.props.gameDifficulty(3)}>
               Easy
             </button>
             &nbsp;
-            <button className="level selected" onClick={() => this.props.gameDifficulty(6)}>
+            <button id="hardBtn" className="level" onClick={() => this.props.gameDifficulty(6)}>
               Hard
             </button>
           </div>;

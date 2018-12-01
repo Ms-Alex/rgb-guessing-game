@@ -1,22 +1,25 @@
 body {
   background-color: #232323;
+  font-family: "Avenir", "Montserrat"
 }
 
 h1 {
   color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding: 20px 0;
 }
 
-.square {
-  width: 30%;
-  padding-bottom: 30%;
-  float: left;
-  margin: 1.66%
+.pickedColor {
+  font-size: 200%;
 }
 
-.game-squares {
+#game-header {
+  width: 100%;
   margin: 0 auto;
-  max-width: 600px;
-  border-radius: 20%;
 }
 
 .level, .new-game {
@@ -26,21 +29,54 @@ h1 {
 .progress-text {
   cursor: default;
   margin: 10px 50px;
+  display: inline;
+  width: 20%;
 }
 
-#game-header {
-  width: 100%;
-  height: 100px;
-  margin: 0 auto;
-}
 
 .game-controls {
   background-color: white;
   height: 30px;
   text-align: center;
   color: black;
+  margin-bottom: 20px;
 }
 
 .selected {
-  background-color: blue;
+  background-color: #c64cff;
+  color: white;
+}
+
+.square {
+  transition: background 1s;
+  -webkit-transition: background 1s;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 25%;
+}
+
+.game-squares {
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 20%;
+}
+
+button {
+  border: none;
+  background-color: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: #c64cff;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.4s;
+  outline: 0;
+}
+
+button:hover {
+  color: white;
+  background-color: #c64cff;
 }

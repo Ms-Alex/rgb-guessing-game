@@ -4,7 +4,11 @@ class GameHeader extends Component {
     render() {
         return <div id="game-header">
             <h1>
-              The Cool <span>{this.props.colorGuess.toUpperCase()}</span> Guessing Game
+              The Cool 
+              <br />
+              <span class="pickedColor">{this.props.colorGuess}</span> 
+              <br />
+              Guessing Game
             </h1>
           </div>;
     }
