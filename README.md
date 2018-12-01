@@ -1,12 +1,12 @@
 # The RGB Guessing Game
-> Guess which square contains the correct RGB color displayed on the game header!
+> Guess which tile contains the correct RGB color that's displayed!
 
-Created using React. You can 
+Created using React. You can test out your RGB color skills in this game, by choosing the correct tile. There are two difficulty modes: Easy contains only 3 tiles to guess from, and HARD mode contains 6 tiles. Just a heads up: the game starts on HARD mode.
 
-Ruby on Rails API back end repo available here: https://github.com/newmanbradm/basket_case_backend
+Future potential updates: Add a 60 second timer, and a backend to persist top scores.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/8FDepbpNfE0ZPxXdjB/giphy.gif" alt="basketcase still image">
+  <img src="" alt="rgbColorGame still image">
 </p>
 
 ## Installation
@@ -18,19 +18,21 @@ front end:
 npm install
 ```
 
+** Must have node.js installed.
+
 ## Usage example
 
-Before playing, you must enter a username:
+You can click to have new colors render. Then, choose the correct tile, and play again:
 
 <p align="center">
-  <img src="https://media.giphy.com/media/fZYlMl3caJxX9pGXTN/giphy.gif" alt="basketcase demo 1">
+  <img src="" alt="rgbColorGame demo 1">
 </p>
 
 
-Then, play to your heart's content until you reach the leaderboard. But, remember to AVOID the beehives!
+Want to play on an easier mode? Click on EASY:
 
 <p align="center">
-  <img src="https://media.giphy.com/media/69jtMeDXW7Z2marvz8/giphy.gif" alt="basketcase demo 2">
+  <img src="" alt="rgbColorGame demo 2">
 </p>
 
 
@@ -40,8 +42,6 @@ front end:
 ```sh
 npm start
 ```
-
-** Must have node.js installed.
 
 ## Release History
 
